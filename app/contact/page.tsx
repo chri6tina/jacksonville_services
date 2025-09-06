@@ -1,10 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaCheckCircle } from 'react-icons/fa'
 
 
 export default function Contact() {
+  const searchParams = useSearchParams()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,6 +16,23 @@ export default function Contact() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+
+  // Pre-fill service field based on URL parameter
+  useEffect(() => {
+    const service = searchParams.get('service')
+    if (service) {
+      const serviceMap: { [key: string]: string } = {
+        'commercial-cleaning': 'Professional Commercial Cleaning',
+        'junk-removal': 'Junk Removal',
+        'power-washing': 'Power Washing',
+        'vending': 'Vending Machines'
+      }
+      setFormData(prev => ({
+        ...prev,
+        service: serviceMap[service] || service
+      }))
+    }
+  }, [searchParams])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
@@ -27,23 +46,44 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after showing success message
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
+    try {
+      const response = await fetch('https://formspree.io/f/mldwagvv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+          _subject: `New Contact Form Submission from ${formData.name}`,
+        }),
       })
-    }, 5000)
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        // Reset form after showing success message
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            service: '',
+            message: ''
+          })
+        }, 5000)
+      } else {
+        throw new Error('Form submission failed')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('There was an error submitting your form. Please try again or call us directly at (904) 456-3851.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -56,8 +96,8 @@ export default function Contact() {
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'info@jacksonvilleservices.com',
-      href: 'mailto:info@jacksonvilleservices.com'
+      value: 'support@jacksonvilleservices.com',
+      href: 'mailto:support@jacksonvilleservices.com'
     },
     {
       icon: FaMapMarkerAlt,
@@ -132,7 +172,7 @@ export default function Contact() {
               Call Now: (904) 456-3851
             </a>
             <a
-              href="mailto:info@jacksonvilleservices.com"
+              href="mailto:support@jacksonvilleservices.com"
               className="border-2 border-white text-white hover:bg-white hover:text-primary-700 font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
             >
               Send Email
@@ -403,7 +443,7 @@ export default function Contact() {
               Call Now: (904) 456-3851
             </a>
             <a 
-              href="mailto:info@jacksonvilleservices.com"
+              href="mailto:support@jacksonvilleservices.com"
               className="border-2 border-white text-white hover:bg-white hover:text-primary-700 font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
             >
               Send Email

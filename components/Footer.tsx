@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-neutral-300">
                 <FaEnvelope className="text-primary-400" />
-                <span>info@jacksonvilleservices.com</span>
+                <span>support@jacksonvilleservices.com</span>
               </div>
               <div className="flex items-center space-x-3 text-neutral-300">
                 <FaMapMarkerAlt className="text-primary-400" />

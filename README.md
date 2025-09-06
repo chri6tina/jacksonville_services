@@ -232,7 +232,7 @@ This project is proprietary software for Jacksonville Services LLC.
 ## 🤝 Support
 
 For technical support or questions about the website:
-- Email: info@jacksonvilleservices.com
+- Email: support@jacksonvilleservices.com
 - Phone: (904) 555-0123
 
 ---

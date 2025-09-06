@@ -65,7 +65,7 @@ export default function Privacy() {
             <div className="bg-neutral-50 p-4 rounded-lg">
               <p className="text-neutral-700">
                 <strong>Jacksonville Services LLC</strong><br />
-                Email: info@jacksonvilleservices.com<br />
+                Email: support@jacksonvilleservices.com<br />
                 Phone: (904) 555-0123<br />
                 Address: 123 Main Street, Jacksonville, FL 32202
               </p>

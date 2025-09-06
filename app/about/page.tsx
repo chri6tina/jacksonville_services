@@ -367,7 +367,7 @@ export default function About() {
             </div>
             <div className="flex items-center space-x-2">
               <FaEnvelope className="w-5 h-5" />
-              <span>info@jacksonvilleservices.com</span>
+              <span>support@jacksonvilleservices.com</span>
             </div>
           </div>
         </div>

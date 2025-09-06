@@ -36,7 +36,7 @@ export default function RootLayout({
     "description": "Professional commercial services including cleaning, vending machines, junk removal, and power washing in Jacksonville, Florida",
     "url": "https://jacksonvilleservices.com",
     "telephone": "+19044563851",
-    "email": "info@jacksonvilleservices.com",
+    "email": "support@jacksonvilleservices.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Jacksonville",

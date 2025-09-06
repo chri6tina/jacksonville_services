@@ -45,7 +45,7 @@ export default function FAQ() {
         },
         {
           question: 'How do I get a quote?',
-          answer: 'Getting a quote is easy! You can call us at (904) 456-3851, email us at info@jacksonvilleservices.com, or fill out our contact form. We provide free, no-obligation quotes for all our services.'
+          answer: 'Getting a quote is easy! You can call us at (904) 456-3851, email us at support@jacksonvilleservices.com, or fill out our contact form. We provide free, no-obligation quotes for all our services.'
         }
       ]
     },
@@ -267,10 +267,10 @@ export default function FAQ() {
               <h3 className="text-xl font-semibold text-neutral-800 mb-2">Email Us</h3>
               <p className="text-neutral-600 mb-4">Send us your questions</p>
               <a
-                href="mailto:info@jacksonvilleservices.com"
+                href="mailto:support@jacksonvilleservices.com"
                 className="text-primary-600 hover:text-primary-700 font-semibold text-lg"
               >
-                info@jacksonvilleservices.com
+                support@jacksonvilleservices.com
               </a>
             </div>
           </div>
