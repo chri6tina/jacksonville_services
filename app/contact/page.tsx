@@ -1,11 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaCheckCircle } from 'react-icons/fa'
 
-
-export default function Contact() {
+function ContactForm() {
   const searchParams = useSearchParams()
   const [formData, setFormData] = useState({
     name: '',
@@ -452,5 +451,13 @@ export default function Contact() {
         </div>
       </section>
     </div>
+  )
+}
+
+export default function Contact() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactForm />
+    </Suspense>
   )
 }
