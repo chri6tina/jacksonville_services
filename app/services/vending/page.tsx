@@ -197,6 +197,13 @@ export default function VendingMachines() {
                 <div className="flex items-start space-x-4">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
                   <div>
+                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Specialized Vending Expertise</h3>
+                    <p className="text-neutral-600">Partnering with <a href="https://jacksonvillevendingmachines.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">Jacksonville Vending Machines</a> for comprehensive vending solutions including micro-markets, smart vending technology, and specialized services throughout Jacksonville and surrounding areas.</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div>
                     <h3 className="text-lg font-semibold text-neutral-800 mb-2">Customized Business Solutions</h3>
                     <p className="text-neutral-600">Tailored vending programs designed specifically for your facility, staff preferences, and business requirements.</p>
                   </div>
