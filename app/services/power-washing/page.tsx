@@ -221,6 +221,13 @@ export default function CommercialPowerWashing() {
                     <p className="text-neutral-600">Licensed and insured power washing professionals with extensive commercial and industrial experience.</p>
                   </div>
                 </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Residential Pressure Washing Partnership</h3>
+                    <p className="text-neutral-600">For residential pressure washing needs, we partner with <a href="https://www.jaxflpressurewashing.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">Jax FL Pressure Washing</a>, Jacksonville's trusted family-owned and veteran-owned pressure washing company specializing in house washing, driveway cleaning, and roof cleaning services.</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="relative">
