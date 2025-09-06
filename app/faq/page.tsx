@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import { FaChevronDown, FaPhone, FaEnvelope, FaQuestionCircle } from 'react-icons/fa'
 
+// FAQ page - static display for better SEO
+
 export const metadata = {
   title: 'Frequently Asked Questions - Jacksonville Services LLC',
   description: 'Get answers to common questions about Jacksonville Services LLC. Learn about our commercial cleaning, junk removal, power washing, and vending machine services in Jacksonville, Florida.',
