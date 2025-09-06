@@ -15,6 +15,7 @@ const Navigation = () => {
     { name: 'Power Washing', href: '/services/power-washing', description: 'Exterior cleaning and pressure washing' },
     { name: 'Vending Machines', href: '/services/vending', description: 'Smart vending solutions for your business' },
     { name: 'Neighborhood Cleanup', href: '/services/neighborhood-cleanup', description: 'Community-focused cleanup solutions' },
+    { name: 'Poop Scooping Service', href: '/services/poop-scooping', description: 'Professional pet waste removal service' },
   ]
 
   const toggleDropdown = (service: string) => {

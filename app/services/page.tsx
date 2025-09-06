@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaCog, FaBroom, FaTrash, FaWater, FaUsers, FaCheck, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaCog, FaBroom, FaTrash, FaWater, FaUsers, FaDog, FaCheck, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 
 export const metadata = {
@@ -99,6 +99,24 @@ export default function Services() {
       ],
       cta: 'Request Neighborhood Cleanup Quote',
       ctaHref: '/contact?service=neighborhood-cleanup'
+    },
+    {
+      id: 'poop-scooping',
+      icon: FaDog,
+      title: 'Poop Scooping Service',
+      subtitle: 'Professional Pet Waste Removal',
+      description: 'Keep your property clean and sanitary with our professional dog waste removal service. We provide regular scheduled cleanups for residential yards, commercial properties, and dog parks throughout Jacksonville, ensuring a clean environment for you and your pets.',
+      image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      benefits: [
+        'Regular scheduled cleanups',
+        'Residential and commercial service',
+        'Eco-friendly disposal methods',
+        'Flexible scheduling options',
+        'Dog park maintenance',
+        'HOA and property management partnerships'
+      ],
+      cta: 'Request Poop Scooping Quote',
+      ctaHref: '/contact?service=poop-scooping'
     }
   ]
 
@@ -131,7 +149,7 @@ export default function Services() {
                     {/* Service Count */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mb-16">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">5</div>
+              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">6</div>
               <div className="text-neutral-200 drop-shadow-md">Service Divisions</div>
             </div>
             <div className="text-center">
