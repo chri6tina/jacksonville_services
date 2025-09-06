@@ -210,6 +210,13 @@ export default function CommercialCleaning() {
                     <p className="text-neutral-600">Full compliance with industry standards, safety protocols, and regulatory requirements.</p>
                   </div>
                 </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Specialized Cleaning Partners</h3>
+                    <p className="text-neutral-600">Working with trusted local partners including <a href="https://www.jacksonvillehousecleaningservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">Jacksonville House Cleaning Service</a> for residential cleaning and <a href="https://www.jacksonvillejunkremovals.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">Jacksonville Junk Removals</a> for comprehensive cleanup services throughout Jacksonville.</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="relative">
