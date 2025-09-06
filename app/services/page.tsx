@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaCog, FaBroom, FaTrash, FaWater, FaCheck, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaCog, FaBroom, FaTrash, FaWater, FaUsers, FaCheck, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 
 
 export const metadata = {
   title: 'Our Services - Jacksonville Services LLC',
-  description: 'Comprehensive service solutions including vending machines, house cleaning, junk removal, and power washing in Jacksonville, Florida.',
+  description: 'Comprehensive service solutions including vending machines, commercial cleaning, junk removal, power washing, and neighborhood cleanup in Jacksonville, Florida.',
 }
 
 export default function Services() {
@@ -81,6 +81,24 @@ export default function Services() {
       ],
       cta: 'Request Power Washing Quote',
       ctaHref: '/contact?service=power-washing'
+    },
+    {
+      id: 'neighborhood-cleanup',
+      icon: FaUsers,
+      title: 'Neighborhood Cleanup',
+      subtitle: 'Community-Focused Cleanup Solutions',
+      description: 'Keep your community looking pristine with our specialized neighborhood cleanup services. We work with HOAs, property management companies, and community organizations to maintain clean, attractive neighborhoods throughout Jacksonville.',
+      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
+      benefits: [
+        'Common area maintenance',
+        'Landscape cleanup services',
+        'Trash and debris removal',
+        'Event cleanup services',
+        'Scheduled maintenance programs',
+        'HOA and property manager partnerships'
+      ],
+      cta: 'Request Neighborhood Cleanup Quote',
+      ctaHref: '/contact?service=neighborhood-cleanup'
     }
   ]
 
@@ -106,14 +124,14 @@ export default function Services() {
           </h1>
 
                            <p className="text-xl md:text-2xl mb-12 text-neutral-200 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-                   From professional commercial cleaning to vending solutions, we provide comprehensive service solutions 
-                   to meet all your business needs in Jacksonville, Florida.
+                   From professional commercial cleaning to vending solutions and neighborhood cleanup, we provide comprehensive service solutions 
+                   to meet all your business and community needs in Jacksonville, Florida.
                  </p>
 
                     {/* Service Count */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mb-16">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">4</div>
+              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">5</div>
               <div className="text-neutral-200 drop-shadow-md">Service Divisions</div>
             </div>
             <div className="text-center">

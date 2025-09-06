@@ -14,6 +14,7 @@ const Navigation = () => {
     { name: 'Junk Removal', href: '/services/junk-removal', description: 'Fast and reliable junk removal' },
     { name: 'Power Washing', href: '/services/power-washing', description: 'Exterior cleaning and pressure washing' },
     { name: 'Vending Machines', href: '/services/vending', description: 'Smart vending solutions for your business' },
+    { name: 'Neighborhood Cleanup', href: '/services/neighborhood-cleanup', description: 'Community-focused cleanup solutions' },
   ]
 
   const toggleDropdown = (service: string) => {
