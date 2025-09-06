@@ -1,6 +1,3 @@
-'use client'
-
-import { useState } from 'react'
 import Link from 'next/link'
 import { FaChevronDown, FaPhone, FaEnvelope, FaQuestionCircle } from 'react-icons/fa'
 
@@ -17,15 +14,6 @@ export const metadata = {
 }
 
 export default function FAQ() {
-  const [openItems, setOpenItems] = useState<number[]>([])
-
-  const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
-        ? prev.filter(item => item !== index)
-        : [...prev, index]
-    )
-  }
 
   const faqCategories = [
     {
@@ -197,37 +185,21 @@ export default function FAQ() {
                 
                 <div className="space-y-4">
                   {category.questions.map((faq, faqIndex) => {
-                    const globalIndex = categoryIndex * 100 + faqIndex
-                    const isOpen = openItems.includes(globalIndex)
-                    
                     return (
                       <div
                         key={faqIndex}
                         className="bg-white rounded-lg shadow-md border border-neutral-200 overflow-hidden"
                       >
-                        <button
-                          onClick={() => toggleItem(globalIndex)}
-                          className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-neutral-50 transition-colors"
-                        >
-                          <span className="font-semibold text-neutral-800 pr-4">
+                        <div className="px-6 py-4">
+                          <h3 className="font-semibold text-neutral-800 mb-3">
                             {faq.question}
-                          </span>
-                          <FaChevronDown
-                            className={`w-5 h-5 text-primary-600 transition-transform ${
-                              isOpen ? 'rotate-180' : ''
-                            }`}
-                          />
-                        </button>
-                        
-                        {isOpen && (
-                          <div className="px-6 pb-4">
-                            <div className="border-t border-neutral-200 pt-4">
-                              <p className="text-neutral-600 leading-relaxed">
-                                {faq.answer}
-                              </p>
-                            </div>
+                          </h3>
+                          <div className="border-t border-neutral-200 pt-3">
+                            <p className="text-neutral-600 leading-relaxed">
+                              {faq.answer}
+                            </p>
                           </div>
-                        )}
+                        </div>
                       </div>
                     )
                   })}
