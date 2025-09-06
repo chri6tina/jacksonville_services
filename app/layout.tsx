@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description: 'Jacksonville Services LLC is your trusted local partner for vending machines, house cleaning, junk removal, and power washing services in Jacksonville, Florida.',
   keywords: 'Jacksonville services, vending machines, house cleaning, junk removal, power washing, Florida',
   authors: [{ name: 'Jacksonville Services LLC' }],
+  verification: {
+    google: 'kUrX1J-yzidEByujAunq3e7HahYEzvkc5T5eGpzZ8vA',
+  },
   openGraph: {
     title: 'Jacksonville Services LLC - Your One-Stop Service Partner',
     description: 'Trusted local services in Jacksonville, Florida',
