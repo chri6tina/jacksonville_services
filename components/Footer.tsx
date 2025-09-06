@@ -31,10 +31,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-coastal-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">JS</span>
-              </div>
+            <div className="mb-4">
               <span className="text-xl font-bold">Jacksonville Services</span>
             </div>
             <p className="text-neutral-300 mb-4">
