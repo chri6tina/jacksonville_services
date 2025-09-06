@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaDog, FaHome, FaBuilding, FaTree, FaRecycle, FaClock, FaShieldAlt, FaCheckCircle, FaMapMarkerAlt, FaPhone, FaEnvelope, IconType } from 'react-icons/fa'
+import { FaDog, FaHome, FaBuilding, FaTree, FaRecycle, FaClock, FaShieldAlt, FaCheckCircle, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 export const metadata = {
   title: 'Poop Scooping Service Jacksonville FL | Professional Pet Waste Removal',
