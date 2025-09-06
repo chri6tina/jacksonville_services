@@ -41,10 +41,13 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/jacksonville hero skyline.png"
             alt="Jacksonville hero skyline"
-            className="w-full h-full object-cover"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
           />
           {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-black bg-opacity-80"></div>

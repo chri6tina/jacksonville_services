@@ -1,108 +1,75 @@
 import Link from 'next/link'
-import { FaStar, FaQuoteLeft, FaCog, FaBroom, FaTrash, FaWater, FaBuilding, FaIndustry, FaHospital, FaGraduationCap } from 'react-icons/fa'
+import { FaStar, FaQuoteLeft, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 export const metadata = {
-  title: 'Client Testimonials - Jacksonville Services LLC',
-  description: 'Read what our satisfied commercial clients have to say about our vending machines, commercial cleaning, junk removal, and power washing services in Jacksonville.',
+  title: 'Customer Testimonials - Jacksonville Services LLC',
+  description: 'Read what our satisfied customers say about Jacksonville Services LLC. Real reviews from businesses and residents throughout Jacksonville, Florida.',
+  keywords: 'Jacksonville Services reviews, customer testimonials, Jacksonville cleaning reviews, commercial services reviews, Florida service company testimonials',
+  openGraph: {
+    title: 'Customer Testimonials - Jacksonville Services LLC',
+    description: 'Read what our satisfied customers say about Jacksonville Services LLC.',
+    type: 'website',
+    locale: 'en_US',
+  },
 }
 
 export default function Testimonials() {
   const testimonials = [
     {
-      service: 'Vending Machines',
-      icon: FaCog,
-      reviews: [
-        {
-          name: 'Jennifer Martinez',
-          company: 'Downtown Law Office',
-          position: 'Office Manager',
-          rating: 5,
-          text: 'Jacksonville Services has transformed our office break room with their smart vending machines. The inventory management is incredible, and our team loves the fresh snack options. Their commercial contracts are flexible and their service is consistently reliable.',
-          industry: 'Legal Services'
-        },
-        {
-          name: 'Robert Chen',
-          company: 'Jacksonville Community College',
-          position: 'Facilities Director',
-          rating: 5,
-          text: 'We\'ve been using Jacksonville Services for our campus vending needs for over 3 years. Their machines are always well-stocked, clean, and the cashless payment options are perfect for our students. They understand the unique needs of educational institutions.',
-          industry: 'Education'
-        }
-      ]
-    },
-    {
+      name: 'Sarah Johnson',
+      company: 'Downtown Law Firm',
+      location: 'Downtown Jacksonville',
       service: 'Commercial Cleaning',
-      icon: FaBroom,
-      reviews: [
-        {
-          name: 'Sarah Williams',
-          company: 'Riverside Medical Center',
-          position: 'Operations Manager',
-          rating: 5,
-          text: 'Jacksonville Services provides exceptional commercial cleaning for our medical facility. Their attention to detail is amazing, and they maintain the highest standards of cleanliness required in healthcare. The team is professional and trustworthy.',
-          industry: 'Healthcare'
-        },
-        {
-          name: 'Michael Thompson',
-          company: 'San Marco Retail Plaza',
-          position: 'Property Manager',
-          rating: 5,
-          text: 'As property managers, we rely on Jacksonville Services for our daily cleaning needs. They\'re flexible with scheduling, use eco-friendly products, and maintain our retail spaces to the highest standards. Their commercial contracts are comprehensive.',
-          industry: 'Retail'
-        }
-      ]
+      rating: 5,
+      text: 'Jacksonville Services has been handling our office cleaning for over two years. Their attention to detail and reliability is unmatched. Our office always looks pristine, and they work around our schedule perfectly.'
     },
     {
-      service: 'Commercial Junk Removal',
-      icon: FaTrash,
-      reviews: [
-        {
-          name: 'David Rodriguez',
-          company: 'Jacksonville Manufacturing Co.',
-          position: 'Operations Director',
-          rating: 5,
-          text: 'When we needed to clear out our old manufacturing equipment, Jacksonville Services came through big time. They were fast, professional, and handled everything from start to finish. Great service for industrial clients!',
-          industry: 'Manufacturing'
-        },
-        {
-          name: 'Amanda Foster',
-          company: 'Downtown Construction LLC',
-          position: 'Project Manager',
-          rating: 5,
-          text: 'We had a major renovation project and needed construction debris removed. Jacksonville Services was there same-day and cleaned up everything perfectly. Their team is efficient and professional for commercial projects.',
-          industry: 'Construction'
-        }
-      ]
+      name: 'Michael Chen',
+      company: 'Mandarin Medical Center',
+      location: 'Mandarin, Jacksonville',
+      service: 'Commercial Cleaning',
+      rating: 5,
+      text: 'The healthcare cleaning services are exceptional. They understand our strict protocols and maintain the highest standards. Our patients and staff always comment on how clean our facility is.'
     },
     {
-      service: 'Commercial Power Washing',
-      icon: FaWater,
-      reviews: [
-        {
-          name: 'Thomas Anderson',
-          company: 'Beachfront Hotel Group',
-          position: 'Maintenance Supervisor',
-          rating: 5,
-          text: 'Operating near the beach means our commercial properties get dirty quickly. Jacksonville Services power washing service is incredible - they restored our hotels\' curb appeal in just a few hours. Outstanding results for hospitality!',
-          industry: 'Hospitality'
-        },
-        {
-          name: 'Patricia Johnson',
-          company: 'Jacksonville Commercial Properties',
-          position: 'Property Manager',
-          rating: 5,
-          text: 'We manage several commercial properties in Jacksonville and trust Jacksonville Services for all our power washing needs. They\'re reliable, professional, and always deliver exceptional results for commercial clients.',
-          industry: 'Property Management'
-        }
-      ]
+      name: 'Lisa Rodriguez',
+      company: 'Riverside Retail',
+      location: 'Riverside, Jacksonville',
+      service: 'Junk Removal',
+      rating: 5,
+      text: 'When we needed to clear out our old inventory, Jacksonville Services made it look easy. Professional, efficient, and they recycled everything properly. Will definitely use them again.'
+    },
+    {
+      name: 'David Thompson',
+      company: 'Atlantic Beach Hotel',
+      location: 'Atlantic Beach, FL',
+      service: 'Power Washing',
+      rating: 5,
+      text: 'Our hotel exterior was looking tired and worn. Jacksonville Services transformed it completely. The power washing service was thorough, and our guests have noticed the difference.'
+    },
+    {
+      name: 'Jennifer Williams',
+      company: 'San Marco Office Building',
+      location: 'San Marco, Jacksonville',
+      service: 'Vending Machines',
+      rating: 5,
+      text: 'The vending machine service has been a huge hit with our employees. Fresh snacks, reliable machines, and great customer service. It\'s one less thing we have to worry about.'
+    },
+    {
+      name: 'Robert Martinez',
+      company: 'Orange Park Manufacturing',
+      location: 'Orange Park, FL',
+      service: 'Commercial Cleaning',
+      rating: 5,
+      text: 'Industrial cleaning is no easy task, but Jacksonville Services handles it perfectly. They understand our safety requirements and keep our facility spotless. Highly recommend their services.'
     }
   ]
 
-  const overallStats = [
-    { number: '200+', label: 'Corporate Clients' },
-    { number: '4.9', label: 'Client Rating' },
-    { number: '5+', label: 'Years of Excellence' },
-    { number: '100%', label: 'Client Satisfaction' }
+  const stats = [
+    { number: '200+', label: 'Happy Customers' },
+    { number: '4.9', label: 'Average Rating' },
+    { number: '98%', label: 'Customer Retention' },
+    { number: '5+', label: 'Years of Service' }
   ]
 
   const renderStars = (rating: number) => {
@@ -110,83 +77,107 @@ export default function Testimonials() {
       <FaStar
         key={i}
         className={`w-5 h-5 ${
-          i < rating ? 'text-amber-500' : 'text-neutral-300'
+          i < rating ? 'text-yellow-400' : 'text-gray-300'
         }`}
       />
     ))
-  }
-
-  const getIndustryIcon = (industry: string) => {
-    switch (industry) {
-      case 'Healthcare': return FaHospital
-      case 'Education': return FaGraduationCap
-      case 'Manufacturing': return FaIndustry
-      case 'Construction': return FaIndustry
-      case 'Hospitality': return FaBuilding
-      case 'Property Management': return FaBuilding
-      case 'Legal Services': return FaBuilding
-      case 'Retail': return FaBuilding
-      default: return FaBuilding
-    }
   }
 
   return (
     <div>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
           <img
             src="/jacksonville hero skyline.png"
-            alt="Jacksonville skyline"
+            alt="Jacksonville testimonials"
             className="w-full h-full object-cover"
           />
-          {/* Dark overlay for text readability */}
           <div className="absolute inset-0 bg-black bg-opacity-80"></div>
         </div>
 
-        {/* Hero Content */}
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto w-full">
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight drop-shadow-2xl">
-            Client Success Stories
+            What Our Customers Say
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-neutral-200 max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
-            Don't just take our word for it. Read what our satisfied commercial clients have to say 
-            about their experience with Jacksonville Services.
+            Don't just take our word for it. Read what our satisfied customers throughout 
+            Jacksonville have to say about our services.
           </p>
           
-          {/* Key Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mb-16">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">200+</div>
-                                   <div className="text-neutral-200 drop-shadow-md">Corporate Clients</div>
-                   </div>
-                   <div className="text-center">
-                     <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">4.9</div>
-                     <div className="text-neutral-200 drop-shadow-md">Client Rating</div>
-                   </div>
-                   <div className="text-center">
-                     <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">5+</div>
-                     <div className="text-neutral-200 drop-shadow-md">Years of Excellence</div>
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto mb-16">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl font-bold text-white mb-2 drop-shadow-lg">{stat.number}</div>
+                <div className="text-neutral-200 drop-shadow-md">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link
+              href="/contact"
+              className="bg-white text-primary-700 hover:bg-gray-50 font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl"
+            >
+              Get Your Free Quote
+            </Link>
+            <Link
+              href="/services"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary-700 font-bold text-lg px-10 py-4 rounded-full transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+            >
+              View Our Services
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Overall Stats */}
-      <section className="section-padding bg-white">
+      {/* Testimonials Grid */}
+      <section className="section-padding bg-neutral-50">
         <div className="container-custom">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {overallStats.map((stat, index) => (
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+              Customer Success Stories
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              Real feedback from real customers who trust Jacksonville Services 
+              for their commercial and residential needs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
               <div
-                key={stat.label}
-                className="text-center p-6 bg-neutral-50 rounded-xl hover:bg-neutral-100 transition-colors duration-300"
+                key={index}
+                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-100"
               >
-                <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
-                  {stat.number}
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400 mr-2">
+                    {renderStars(testimonial.rating)}
+                  </div>
+                  <span className="text-sm text-neutral-600 ml-2">
+                    {testimonial.rating}.0/5.0
+                  </span>
                 </div>
-                <div className="text-neutral-600 font-medium">
-                  {stat.label}
+                
+                <div className="mb-6">
+                  <FaQuoteLeft className="w-8 h-8 text-primary-200 mb-4" />
+                  <p className="text-neutral-700 italic leading-relaxed">
+                    "{testimonial.text}"
+                  </p>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary-600 font-bold text-lg">
+                      {testimonial.name.split(' ').map(n => n[0]).join('')}
+                    </span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-neutral-800">{testimonial.name}</h4>
+                    <p className="text-sm text-primary-600">{testimonial.company}</p>
+                    <p className="text-sm text-neutral-600">{testimonial.location}</p>
+                    <p className="text-xs text-neutral-500 mt-1">{testimonial.service}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -194,120 +185,84 @@ export default function Testimonials() {
         </div>
       </section>
 
-      {/* Testimonials by Service */}
-      <section className="section-padding bg-neutral-50">
+      {/* Why Customers Choose Us */}
+      <section className="section-padding">
         <div className="container-custom">
-          {testimonials.map((serviceGroup, groupIndex) => (
-            <div
-              key={serviceGroup.service}
-              className="mb-20 last:mb-0"
-            >
-              {/* Service Header */}
-              <div className="text-center mb-12">
-                <div className="flex items-center justify-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-700 rounded-lg flex items-center justify-center">
-                    <serviceGroup.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-neutral-800">
-                    {serviceGroup.service}
-                  </h2>
-                </div>
-                <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-                  See what our commercial clients are saying about our {serviceGroup.service.toLowerCase()} service.
-                </p>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+              Why Customers Keep Coming Back
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+              Our commitment to excellence and customer satisfaction has earned us 
+              the trust of businesses and residents throughout Jacksonville.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaStar className="w-8 h-8 text-primary-600" />
               </div>
-
-              {/* Reviews Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {serviceGroup.reviews.map((review, reviewIndex) => {
-                  const IndustryIcon = getIndustryIcon(review.industry)
-                  return (
-                    <div
-                      key={review.name}
-                      className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-100"
-                    >
-                      {/* Quote Icon and Rating */}
-                      <div className="flex justify-between items-start mb-6">
-                        <FaQuoteLeft className="w-8 h-8 text-neutral-300" />
-                        <div className="flex">
-                          {renderStars(review.rating)}
-                        </div>
-                      </div>
-
-                      {/* Review Text */}
-                      <p className="text-neutral-700 mb-8 text-lg leading-relaxed">
-                        "{review.text}"
-                      </p>
-
-                      {/* Customer Info */}
-                      <div className="flex items-center space-x-4">
-                        <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
-                          <IndustryIcon className="w-8 h-8 text-primary-600" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="font-semibold text-neutral-800 text-lg">
-                            {review.name}
-                          </div>
-                          <div className="text-primary-600 font-medium">
-                            {review.position}
-                          </div>
-                          <div className="text-sm text-neutral-600">
-                            {review.company}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
+              <h3 className="text-xl font-semibold text-neutral-800 mb-4">Consistent Quality</h3>
+              <p className="text-neutral-600">
+                Every service is delivered with the same high standards, ensuring 
+                your satisfaction every time.
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* Featured Testimonial */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <div className="bg-primary-700 rounded-2xl p-8 md:p-12 text-white text-center">
-            <FaQuoteLeft className="w-12 h-12 text-white/30 mx-auto mb-6" />
-            <blockquote className="text-2xl md:text-3xl font-medium mb-8 leading-relaxed max-w-4xl mx-auto">
-              "Jacksonville Services has been our go-to company for all our commercial service needs. 
-              From vending machines to power washing, they consistently deliver exceptional 
-              quality and outstanding customer service. Their commercial contracts are comprehensive 
-              and they truly understand what it means to serve business clients in our community."
-            </blockquote>
-            <div className="flex items-center justify-center space-x-4">
-              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                <FaBuilding className="w-8 h-8 text-white" />
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaQuoteLeft className="w-8 h-8 text-primary-600" />
               </div>
-              <div className="text-left">
-                <div className="font-semibold text-lg">Carlos Rodriguez</div>
-                <div className="text-neutral-200">Jacksonville Chamber of Commerce</div>
-                <div className="text-sm text-neutral-300">Executive Director</div>
+              <h3 className="text-xl font-semibold text-neutral-800 mb-4">Reliable Service</h3>
+              <p className="text-neutral-600">
+                You can count on us to be there when you need us, with flexible 
+                scheduling and professional service.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <FaPhone className="w-8 h-8 text-primary-600" />
               </div>
+              <h3 className="text-xl font-semibold text-neutral-800 mb-4">Local Expertise</h3>
+              <p className="text-neutral-600">
+                As Jacksonville natives, we understand local needs and provide 
+                personalized service to our community.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-neutral-50">
+      <section className="section-padding bg-primary-700 text-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">
-            Ready to Experience Our Commercial Excellence?
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Join Our Happy Customers?
           </h2>
-          <p className="text-xl text-neutral-600 mb-8 max-w-3xl mx-auto">
-            Join the hundreds of satisfied corporate clients who trust Jacksonville Services for their 
-            commercial service needs. Experience the difference that local expertise and professional 
-            service can make for your business.
+          <p className="text-xl mb-8 text-neutral-200 max-w-2xl mx-auto">
+            Experience the Jacksonville Services difference for yourself. 
+            Contact us today for your free consultation and quote.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/services" className="btn-primary text-lg px-8 py-4">
-              View Our Services
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Link href="/contact" className="bg-white text-primary-700 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg">
+              Get Free Quote
             </Link>
-            <Link href="/contact" className="btn-outline text-lg px-8 py-4">
-              Request Commercial Quote
+            <Link href="tel:+19044563851" className="border-2 border-white text-white hover:bg-white hover:text-primary-700 font-semibold py-3 px-8 rounded-lg transition-colors duration-200">
+              Call Now: (904) 456-3851
             </Link>
+          </div>
+          
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-neutral-200">
+            <div className="flex items-center space-x-2">
+              <FaPhone className="w-5 h-5" />
+              <span>(904) 456-3851</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <FaEnvelope className="w-5 h-5" />
+              <span>info@jacksonvilleservices.com</span>
+            </div>
           </div>
         </div>
       </section>

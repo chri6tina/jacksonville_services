@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const services = [
-    { name: 'Vending Machines', href: '/services#vending' },
-    { name: 'House Cleaning', href: '/services#cleaning' },
-    { name: 'Junk Removal', href: '/services#junk-removal' },
-    { name: 'Power Washing', href: '/services#power-washing' },
+    { name: 'Commercial Cleaning', href: '/services/commercial-cleaning' },
+    { name: 'Junk Removal', href: '/services/junk-removal' },
+    { name: 'Power Washing', href: '/services/power-washing' },
+    { name: 'Vending Machines', href: '/services/vending' },
   ]
 
   const quickLinks = [
