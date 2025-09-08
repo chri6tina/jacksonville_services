@@ -265,7 +265,7 @@ export default function DowntownPoopScooping() {
                 <div className="w-6 h-6 bg-primary-600 rounded-full flex-shrink-0 mt-1"></div>
                 <div>
                   <h3 className="text-lg font-semibold text-neutral-800 mb-2">Trusted Local Partnership</h3>
-                  <p className="text-neutral-600">Working with trusted local partners including <a href="https://www.poopscoopjax.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">Poop Rescue</a> for comprehensive pet waste removal services throughout Downtown Jacksonville.</p>
+                    <p className="text-neutral-600">Working with trusted local partners including <a href="https://www.poopscoopjax.com/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline font-medium">Poop Scoop Jax</a> for comprehensive pet waste removal services throughout Downtown Jacksonville.</p>
                 </div>
               </div>
             </div>
