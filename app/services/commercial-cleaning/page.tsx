@@ -265,31 +265,116 @@ export default function CommercialCleaning() {
         </div>
       </section>
 
-      {/* Service Areas */}
-      <section className="section-padding">
+      {/* Jacksonville Areas Served */}
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
-              Service Areas
+              Jacksonville Areas We Serve
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-              We proudly serve Jacksonville and surrounding areas with reliable, 
-              professional commercial cleaning services.
+              We provide specialized commercial cleaning services throughout Jacksonville's diverse business districts.
             </p>
           </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-            {serviceAreas.map((area, index) => (
-              <div
-                key={area}
-                className="bg-white rounded-lg p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 border border-neutral-100"
-              >
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <FaMapMarkerAlt className="w-6 h-6 text-primary-600" />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/services/commercial-cleaning/locations/arlington" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
                 </div>
-                <h3 className="font-semibold text-neutral-800">{area}</h3>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Arlington</h3>
+                <p className="text-neutral-600">Professional commercial cleaning services for Arlington's diverse business community</p>
               </div>
-            ))}
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/downtown" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Downtown</h3>
+                <p className="text-neutral-600">Urban commercial cleaning services for Downtown Jacksonville businesses</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/riverside-avondale" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Riverside Avondale</h3>
+                <p className="text-neutral-600">Historic district commercial cleaning services for Riverside and Avondale</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/mandarin" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Mandarin</h3>
+                <p className="text-neutral-600">Family-friendly commercial cleaning services for Mandarin businesses</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/beaches" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Jacksonville Beaches</h3>
+                <p className="text-neutral-600">Coastal commercial cleaning services for Jacksonville's beach areas</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/san-marco" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">San Marco</h3>
+                <p className="text-neutral-600">Historic district commercial cleaning services for San Marco businesses</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/orange-park" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Orange Park</h3>
+                <p className="text-neutral-600">Suburban commercial cleaning services for Orange Park businesses</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/southside" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Southside</h3>
+                <p className="text-neutral-600">Modern suburban commercial cleaning services for Southside businesses</p>
+              </div>
+            </Link>
+
+            <Link href="/services/commercial-cleaning/locations/baymeadows" className="group">
+              <div className="bg-neutral-50 p-8 rounded-lg text-center hover:shadow-xl transition-all duration-300 group-hover:bg-primary-50">
+                <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                  <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-neutral-800 mb-2 group-hover:text-primary-700">Baymeadows</h3>
+                <p className="text-neutral-600">Corporate commercial cleaning services for Baymeadows area</p>
+              </div>
+            </Link>
+
+            <div className="bg-neutral-50 p-8 rounded-lg text-center">
+              <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                <FaMapMarkerAlt className="w-8 h-8 text-primary-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-neutral-800 mb-2">All Jacksonville Areas</h3>
+              <p className="text-neutral-600">Comprehensive commercial cleaning services for all Jacksonville neighborhoods and communities</p>
+            </div>
           </div>
         </div>
       </section>
